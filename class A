@@ -1,0 +1,14 @@
+class A
+  def abc
+  end
+end
+
+a = A.new
+
+def c(a)
+  case a.respond_to?
+  when :abc then puts 'qwerty'
+  when :to_sym then puts 'ytrewq'
+  else puts 'howdy'
+  end
+end
